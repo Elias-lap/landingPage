@@ -1,0 +1,110 @@
+$breakpoint-sm: 0px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.testymonials {
+  height: 700px;
+  background-color: hsla(30, 95%, 39%, 0.733);
+  background-image: url(../../../public/Testimonials-background.png);
+
+  width: 100%;
+  @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-xl) {
+  height: fit-content;
+
+ }
+  
+
+  // style h2 testymonials
+  h2 {
+    font-family: Sen;
+    font-size: 144px;
+    font-weight: 800;
+    line-height: 138px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+    margin-top: 30px;
+
+    @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      font-size: 100px;
+      // height: 400px;
+    }
+    @media only screen and (min-width: 0px) and (max-width: $breakpoint-md) {
+      font-size: 60px;
+      // height: 400px;
+    }
+  }
+
+  // style Content section
+  &_content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-xl) {
+       width: 90%;
+       align-items: center;
+       justify-content: center;
+
+    }
+  
+    
+
+    // style Box insisde content
+    &-Box {
+      width: 48%;
+      padding-left: 40px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-xl) {
+        width: 90%;
+        
+ 
+     }
+      // style inside Box
+      // ////////////////h3 /////////////////
+      h3 {
+        padding: 15px 0px;
+        color: #c98a40;
+      }
+
+      // style Paragraph //////////////
+      p {
+        line-height: 25px;
+      }
+      // /style icons
+      &-icons {
+        padding: 17px  0px;
+
+
+        .icon{
+          margin-right: 13px;
+          color: #c98a40;
+
+        }
+      }
+    }
+  }
+
+
+  // for button 
+  &_Button{
+    text-align: center;
+      button {
+        padding:1rem 2rem ;
+        margin-top: 0.75rem /* 12px */;
+        color: rgb(255 255 255);
+        background-color: rgb(234 179 8);
+        border-radius: 1.5rem /* 24px */;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    
+      }
+    }
+}

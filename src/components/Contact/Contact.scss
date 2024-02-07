@@ -1,0 +1,133 @@
+
+$breakpoint-sm: 0px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+.contact{
+
+height: 534px;
+
+
+
+
+  // styling h2 
+  h2 {
+    font-family: inherit;
+    font-size: 144px;
+    font-weight: 800;
+    line-height: 138px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #C98A40;
+    padding-top: 30px;
+    margin-top: 30px;
+    @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      font-size: 100px;
+      // height: 400px;
+    }
+    @media only screen and (min-width: 0px) and (max-width: $breakpoint-md) {
+      font-size: 60px;
+      // height: 400px;
+    }
+  }
+
+
+  // style Form   
+  &_Form{
+    width: 60%;
+    margin: 40px  auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+    flex-direction: column;
+    width: 100%;
+    }
+  
+
+      
+    // form /////////
+    form{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+
+      // input Style    
+      input{
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      padding: 20px  10px;
+      border-radius: 40px;
+      background-color: #FFD39F;
+      outline: none;
+      border: none;
+      font-size: 17px;
+      @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+        width: 100%;
+        }
+      &::placeholder{
+        color: #4b2e0e;
+        font-weight: bolder;
+        padding-left: 1rem;
+        
+      }
+      }
+
+      // style Button 
+      button{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        padding: 1.3rem  4rem;
+        border-radius: 2rem;
+        border: 4px solid #C98A40;
+        background-color: transparent;
+        cursor: pointer;
+
+      }
+    }
+//  style left Side 
+ &-leftSide{
+
+  width: 30%;
+  @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+    width: 100%;
+    }
+
+
+  // style for box email 
+  .Box-Email-telefon{
+    padding: 1rem  2rem; 
+    display: flex;
+    gap: 1.2rem;
+    span{
+      margin-left: .3rem;
+      @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-xl) {
+        width: 100%;
+        }
+    }
+
+    // style icon
+    .icon{
+      color: #C98A40;
+    }
+  
+  }
+ }
+  }
+
+
+  &_footer{
+
+
+    height: 117px;
+    background-color: #584125;
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+      width: 100%;
+      }
+  }
+}

@@ -1,0 +1,165 @@
+$breakpoint-sm: 0px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+
+/* Home Page */
+.Home-Page {
+  display: flex;
+  width: 100%;
+
+  
+  
+
+  /* Right Side */
+  &-RightSide {
+    position: relative;
+    width: 75%;
+    background-color: #c98a40;
+    height: 840px;
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-xl) {
+      width: 100%;
+    }
+    // styling h4
+    h4 {
+      width: 248px;
+      height: 10%;
+      top: 10%;
+      left: 30%;
+      position: absolute;
+      font-weight: bolder;
+      font-size: 30px;
+      color: white;
+    }
+    // end styling h4
+    &_content {
+      position: absolute;
+      top: 30%/* 288px */;
+      left: 27% /* 256px */;
+      @media only screen and (min-width: 0px) and (max-width: $breakpoint-xl) {
+        width: 70%;
+      }
+      // styling H2 inside content
+      h2 {
+        font-weight: 800;
+        font-size: 4.5rem /* 72px */;
+        line-height: 1;
+        color: rgb(255 255 255);
+        width: 80%;
+        @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+          font-size: 40px;
+          
+        }
+      
+      }
+      // end styling h2
+      // start styling paragraph inside content
+      p {
+        font-weight: 400;
+        line-height: 26px;
+        font-size: 16px;
+        width: 75%;
+        color: white;
+        font-size: 20px;
+        line-height: 2.25rem /* 36px */;
+        @media only screen and (min-width: 0px) and (max-width: $breakpoint-xl) {
+          width: 75%;
+        }
+      }
+
+      // end styling paragraph
+      // styling Button
+      button {
+        padding:1rem 2rem ;
+        margin-top: 0.75rem /* 12px */;
+        color: rgb(255 255 255);
+        background-color: rgb(234 179 8);
+        border-radius: 1.5rem /* 24px */;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+      // end styling button
+    }
+
+    //  styling container icons Right side
+    &_container-icons {
+      top:80%;
+      height: 201px;
+      width: 66.666667%;
+      position: absolute;
+      display: flex;
+      @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+        display: none;
+      }
+      
+      //  ///////styling icons
+      &-BoxIcons {
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        width: 50%;
+        display: flex;
+        gap: 1.25rem /* 20px */;
+        background-color: rgb(228, 226, 215);
+        background-image: url(../../../public/hero-background2.png);
+        padding-right: 1rem /* 16px */;
+
+        // styling item inside box items
+        &-item {
+          color: rgb(161 98 7);
+        }
+      }
+    //  style dev with telefon number
+    &_Telefon {
+
+      align-items: end;
+      display: flex;
+      width: 50%;
+
+      // style Paragraph
+        p{
+          color: rgb(255 255 255);
+          width: 6rem /* 96px */;
+          padding-inline-start: 0.75rem /* 12px */;
+        }
+
+
+        span{
+          width: 8rem /* 128px */;
+          color: rgb(255 255 255);
+
+        }
+    }
+
+
+    }
+  }
+
+  // style Left side
+  &_LeftSide {
+    width: 25%;
+    background-color: rgb(228, 226, 215);
+    background-image: url(../../../public/hero-background1.png);
+    opacity: .5;
+    @media only screen and (min-width: 0px) and (max-width: $breakpoint-xl) {
+    display: none;
+    }
+  }
+
+  // styling for image
+  &_image {
+    left: 80%;
+    z-index: 99;
+    top: 40%;
+    position: absolute;
+    width: 30rem /* 384px */;
+    @media only screen and (min-width:0px) and (max-width: $breakpoint-xl) {
+      display: none;
+      }
+  }
+}
+
+

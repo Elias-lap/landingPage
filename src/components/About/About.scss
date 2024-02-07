@@ -1,0 +1,111 @@
+$breakpoint-sm: 0px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.About {
+  height: 840px;
+  display: flex;
+  // width: 100%;
+  // background-color: black;
+  @media only screen and (min-width: 0px) and (max-width: $breakpoint-xl) {
+    flex-direction: column;
+    height: fit-content;
+    
+    
+
+  }
+
+  // styling left Side
+  &_LeftSide {
+    width: 65%;
+    background-color: #c98a40;
+    @media only screen and (min-width: 0px) and (max-width: $breakpoint-xl) {
+      width: 100%;
+      
+      
+
+    }
+
+    //  styling paragraph
+    h2 {
+      margin-left: 15%;
+      font-family: Sen;
+      font-size: 144px;
+      font-weight: 800;
+      line-height: 100px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding: 50px;
+      color: white;
+      @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+        font-size: 100px;
+        // height: 400px;
+      }
+      @media only screen and (min-width: 0px) and (max-width: $breakpoint-md) {
+        font-size: 80px;
+        // height: 400px;
+      }
+    }
+
+    // styling paragraph
+    p {
+      font-family: Poppins;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: 60%;
+      margin-left: 15%;
+      color: #ffffff;
+    }
+    // styling Button
+    button {
+      margin-left: 15%;
+      padding: 1rem 3rem;
+      margin-top: 0.75rem /* 12px */;
+      color: rgb(255 255 255);
+      background-color: rgb(234 179 8);
+      border-radius: 1.5rem /* 24px */;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 30px;
+      font-size: larger;
+    }
+    // end styling button
+  }
+
+  // styling Right Side
+  &_RightSide {
+    width: 35%;
+    position: relative;
+    // background-color: aqua;
+    @media only screen and (min-width: 0px) and (max-width: $breakpoint-xl) {
+    position: static;
+    display: none;
+      
+      
+
+    }
+
+    // style ChefImage
+    &_ChefImage {
+      width: 500px;
+      height: 710px;
+      top: 60px;
+      left:-160px;
+      border-radius: 10px;
+      position: absolute;
+      @media only screen and (min-width: 0px) and (max-width: $breakpoint-xl) {
+      display: none;
+        
+        
+  
+      }
+    }
+  }
+}
