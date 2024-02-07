@@ -18,7 +18,7 @@ function About() {
         <button>Contact Us</button>
       </div>
       <div className="About_RightSide ">
-        <img className="About_RightSide_ChefImage" src="../../../public/45564e95653121db1a2ec1cdbe0f67c4.jpeg" alt="Chef" />
+        <img className="About_RightSide_ChefImage" src="./public/45564e95653121db1a2ec1cdbe0f67c4.jpeg" alt="Chef" />
 
 
       </div>

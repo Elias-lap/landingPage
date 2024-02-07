@@ -6,7 +6,7 @@ $breakpoint-xl: 1200px;
 .testymonials {
   height: 700px;
   background-color: hsla(30, 95%, 39%, 0.733);
-  background-image: url(../../../public/Testimonials-background.png);
+  background-image: url(./public/Testimonials-background.png);
 
   width: 100%;
   @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-xl) {

@@ -104,7 +104,7 @@ $breakpoint-xl: 1200px;
         display: flex;
         gap: 1.25rem /* 20px */;
         background-color: rgb(228, 226, 215);
-        background-image: url(../../../public/hero-background2.png);
+        background-image: url(./public/hero-background2.png);
         padding-right: 1rem /* 16px */;
 
         // styling item inside box items
@@ -142,7 +142,7 @@ $breakpoint-xl: 1200px;
   &_LeftSide {
     width: 25%;
     background-color: rgb(228, 226, 215);
-    background-image: url(../../../public/hero-background1.png);
+    background-image: url(./public/hero-background1.png);
     opacity: .5;
     @media only screen and (min-width: 0px) and (max-width: $breakpoint-xl) {
     display: none;
